@@ -7,13 +7,13 @@ public class calculator {
         System.out.println("Prosty kalkulator obslugujacy operacje +, -, *, /");
         
 
-        System.out.print("Podaj pierwszą liczbę: ");
+        System.out.print("Podaj pierwszą liczbe: ");
         double pierwszaLiczba = scanner.nextDouble();
 
         System.out.print("Podaj symbol operacji (+, -, *, /): ");
         char operacja = scanner.next().charAt(0);
         
-        System.out.print("Podaj drugą liczbę: ");
+        System.out.print("Podaj drugą liczbe: ");
         double drugaLiczba = scanner.nextDouble();
         
         double wynik = 0;
@@ -33,12 +33,12 @@ public class calculator {
                 if (drugaLiczba != 0) {
                     wynik = pierwszaLiczba / drugaLiczba;
                 } else {
-                    System.out.println("Błąd: dzielenie przez zero!");
+                    System.out.println("Blad: dzielenie przez zero");
                     poprawnaOperacja = false;
                 }
                 break;
             default:
-                System.out.println("Błąd: nieprawidłowy symbol operacji!");
+                System.out.println("Blad: nieprawidłowy symbol operacji");
                 poprawnaOperacja = false;
         }
         
@@ -46,7 +46,7 @@ public class calculator {
             System.out.println("Wynik: " + wynik);
         }
  
-        System.out.println("Naciśnij Enter, aby zakończyć...");
+        System.out.println("Nacisnij Enter, aby zakonczyc");
         try {
             System.in.read();
         } catch (Exception e) {
